@@ -1,0 +1,21 @@
+Configuração de ambiente Java no VSCode:
+
+1- Extension Pack for Java.
+2- Code Generator For Java.
+3- Lombok Annotations Support for VS Code.
+4- vscode-icons(Definir tema).
+5- Comment Anchors.
+6- Error Lens.
+7- Dracula Theme Official.
+
+*Files: Auto Save
+-Controles salvamento automático dos editores que têm alterações não salvas = afterDelay.
+
+*Editor
+-Editor: Word Wrap = on.
+
+*Editor › Inlay Hints: Enabled
+-Habilita as dicas efetivas no editor = off.
+
+*folder
+-compact folders = desmarcar.
