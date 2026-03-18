@@ -1,0 +1,7 @@
+1- git config --global --unset-all user.name (Tirar credenciais do nome global).
+2- git config --global --unset-all user.email (Tirar credenciais do email global).
+3- git config --list
+4- git config usear.name "Paulo Ribeiro de Aguiar" (Setar a credencial nome). 
+5- git config usear.email "paulodeaguiar@gmail.com" (Setar a credencial e-mail). 
+6- git config --unset-all user.name (Tirar credenciais do nome local).
+7- git config --unset-all user.email (Tirar credenciais do email local).
