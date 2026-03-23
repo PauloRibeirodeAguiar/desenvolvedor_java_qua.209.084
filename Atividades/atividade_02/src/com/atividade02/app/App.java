@@ -14,11 +14,7 @@ public class App {
         System.out.println("Informe sua idade: ");
         int idade = sc.nextInt();
 
-        do {
-            
-        
-
-        
+        do {       
 
         System.out.println("----------------Lista de Filmes-------------------------\n"
         +"[1] - Sala 01 - A Roda Quadrada - Livre\n"
@@ -42,7 +38,5 @@ public class App {
         } while (opcao != 6);
         System.out.println("Obrigado pela preferência!");
         sc.close();
-    }
-
-    
+    }    
 }
