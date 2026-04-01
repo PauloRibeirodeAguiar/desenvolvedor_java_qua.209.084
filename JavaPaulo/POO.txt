@@ -1,3 +1,5 @@
 -public, private, static... são modificadores.
 -Pessoa() == método construtor da classe pessoa, responsável pelo nascimento do objeto.
 -Herança é o mesmo conceito de generalização.
+-Abstração é impedir que certas classe sejam instanciadas.
+-Polimorfismo é um úmnico método atuando em várias classes com compotamento diferente. 
