@@ -21,10 +21,38 @@ public class App {
         switch (tipoVeiculo) {
             case "A":
                 Moto moto = new Moto(null, null, null, null, null, "A", null);
-                
-                break;
+
+                System.out.println("Informe o fabricante: ");
+                moto.setFabricante(sc.nextLine());
+
+                System.out.println("Informe o modelo: ");
+                moto.setModelo(sc.nextLine());
+
+                System.out.println("Informe a cor: ");
+                moto.setCor(sc.nextLine());
+
+                System.out.println("Informe a placa: ");
+                moto.setPlaca(sc.nextLine());
+
+                System.out.println("Informe o ano: ");
+                moto.setAno(sc.nextLine());                
+
+                System.out.println("Informe as cilindradas: ");
+                moto.setCilindradas(sc.nextLine());
+
+                System.out.println();
+
+                System.out.println("Fabricante: "+moto.getFabricante());
+                System.out.println("Modelo: "+moto.getModelo());
+                System.out.println("Cor: "+moto.getCor());
+                System.out.println("Placa: "+moto.getPlaca());
+                System.out.println("Ano: "+moto.getAno());                
+                System.out.println("Categoria: "+moto.getCategoria());
+                System.out.println("Cilindradas: "+moto.getCilindradas());
+                break;               
         
             default:
+                System.out.println("Opção inválida!");
                 break;
         }
         sc.close();
