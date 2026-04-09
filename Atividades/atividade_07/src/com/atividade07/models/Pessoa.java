@@ -1,0 +1,6 @@
+package com.atividade07.models;
+
+public class Pessoa {
+    
+    private String email;
+}
