@@ -1,10 +1,12 @@
 package com.atividade07.app;
 
-import java.nio.channels.Pipe.SourceChannel;
+import java.math.BigDecimal;
 import java.util.Locale;
 import java.util.Scanner;
 
 import com.atividade07.models.Conta;
+import com.atividade07.models.ContaPessoaFisica;
+import com.atividade07.models.ContaPessoaJuridica;
 import com.atividade07.models.PessoaFisica;
 import com.atividade07.models.PessoaJuridica;
 
@@ -28,34 +30,49 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
 
+        PessoaFisica  pf = new PessoaFisica(null, null, null);   
+        Conta ccpf = new ContaPessoaFisica("1234X", "1010-1", null, pf);
+
+        PessoaJuridica pessoaJuridica = new PessoaJuridica(null, null, null, null); 
+        Conta ccpj = new ContaPessoaJuridica("1234-5", "201010-1", null, pessoaJuridica);
+
+        int pessoaTipo = 1;
+        int opcao;
+        BigDecimal valor;
+
         System.out.println("[****************************BANCO JAVA***************************]");
-        System.out.println("[************************ABERTURA DE CONTA************************]");
-        System.out.println("Informe a opção desejada:");
+        System.out.println("[************************ABERTURA DE CONTA************************]");        
         System.out.println("[1]-Pessoa Física");
-        System.out.println("[2]-Pessoa Jurídica");
-        System.out.println("[3]-Sair");
+        System.out.println("[2]-Pessoa Jurídica");   
 
-        int opcaoConta = sc.nextInt();
+        System.out.println("Informe a opção desejada:");
+        opcao = sc.nextInt();
 
-        switch (opcaoConta) {
-            case 1:
-                PessoaFisica pessoaFisica = new PessoaFisica(null, null, null);   
+        
+        switch (pessoaTipo) {
+            case 1:               
                 
                 sc.nextLine();
                 System.out.println("ABERTURA DE CONTA PESSOA FÍSICA");
 
-                System.out.print("Informe o nome:");    
-                pessoaFisica.setNome(sc.nextLine());      
+                System.out.print("Informe o nome do titular:");    
+                pf.setNome(sc.nextLine());      
                 
-                System.out.print("Informe o e-mail: ");    
-                pessoaFisica.setEmail(sc.nextLine());    
+                System.out.print("Informe o e-mail titular: ");    
+                pf.setEmail(sc.nextLine());    
 
-                System.out.print("Informe o CPF: ");    
-                pessoaFisica.setCpf(sc.nextLine());    
-                break;
-            case 2:
-                PessoaJuridica pessoaJuridica = new PessoaJuridica(null, null, null, null); 
+                System.out.print("Informe o CPF do titular: ");    
+                pf.setCpf(sc.nextLine());  
+
+                System.out.println();
                 
+                pf.exibirDados();
+                ccpf.exibirDados();
+                //ccpf.
+                break;
+
+            case 2:                
+
                 sc.nextLine();
                 System.out.println("ABERTURA DE CONTA PESSOA JURÍDICA");
 
@@ -69,15 +86,45 @@ public class App {
                 pessoaJuridica.setEmail(sc.nextLine());  
                 
                 System.out.println("Informe o CNPJ: ");
-                pessoaJuridica.setCnpj(sc.nextLine());;            
+                pessoaJuridica.setCnpj(sc.nextLine());  
+                
+                ccpj.exibirDados();
                 break;
-            case 3:       
-                System.out.println("Obrigado por usar o sistema!");                        
-                break;    
+               
             default:
                 System.out.println("Opção inválida!");
                 break;            
-        }        
+        }
+        /*
+        if ("PF".equals(pessoaTipo) || "PJ".equals(pessoaTipo)) {
+            do {
+            System.out.println("Opções:");
+            System.out.println("[1] - Consultar dados da conta");           
+            System.out.println("[2] - Fazer depósito");           
+            System.out.println("[3] - Fazer saque");           
+            System.out.println("[4] - Sair");    
+            
+            switch (opcao) {
+                case 1:
+                    if (opcao == 1) {
+                        ccpf.exibirDados();
+                    }else{
+                        //ccpj.exibirDados
+                    }
+                    break;
+            
+                    case 2:
+
+                        break;
+                default:
+                    break;
+            }
+        } while (!"4".equals(opcao));
+        }    else{
+            System.out.println("Não foi possível cadastrar novo titular.");
+            System.out.println("Programa encerrado.");
+        }
+        */
         sc.close();
     }
 }

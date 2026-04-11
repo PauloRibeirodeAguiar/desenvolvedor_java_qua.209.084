@@ -8,12 +8,12 @@ public abstract class Conta implements IConta{
 
     private String agencia;
     private String conta;
-    private BigDecimal saldo;
+    protected BigDecimal saldo;
 
-    public Conta(String agencia, String conta, BigDecimal saldo) {
+    public Conta(String agencia, String conta, BigDecimal saldo2) {
         this.agencia = agencia;
         this.conta = conta;
-        this.saldo = saldo;
+        this.saldo = saldo2;
     }
 
     public String getAgencia() {

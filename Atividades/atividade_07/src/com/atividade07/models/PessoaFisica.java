@@ -27,4 +27,9 @@ public class PessoaFisica extends Pessoa{
         this.cpf = cpf;
     }
 
+    public void exibirDados(){
+        System.out.println("Nome do titular: "+this.nome);
+        System.out.println("E-mail do titular: "+getEmail());
+        System.out.println("CPF do titular: "+this.cpf);        
+    }
 }
