@@ -3,3 +3,22 @@
 -Herança é o mesmo conceito de generalização.
 -Abstração é impedir que certas classe sejam instanciadas.
 -Polimorfismo é um úmnico método atuando em várias classes com compotamento diferente. 
+
+
+*****************************
+
+-Internet inicio 1890
+
+-UFRJ primeiro internet implementada no Brasil.
+
+-A ARPANET (Advanced Research Projects Agency Network) foi a primeira rede de comutação de pacotes funcional e precursora da internet moderna, criada em 1969 pelos EUA durante a Guerra Fria. Desenvolvida pelo Departamento de Defesa, visava conectar computadores de centros de pesquisa para compartilhar dados de forma descentralizada e resiliente.
+
+-1994 Embratel dá início a popularização da internet no Brasil.
+
+-Filme: "Jogos de Gerra".
+
+-HTML(Hyper Text Markup Language) - Criando em 1191.
+
+-World Wide Web - www = primeiro web browser.
+
+-Moisaic = Netscape.
