@@ -1,7 +1,7 @@
 package com.atividade06.models;
 
 abstract public class Veiculo {
-
+    // atributos
     private String fabricante;
     private String modelo;
     private String cor;
@@ -9,8 +9,7 @@ abstract public class Veiculo {
     private String placa;
     private String categoria;
 
-
-
+    // construtor
     public Veiculo(String fabricante, String modelo, String cor, String ano, String placa, String categoria) {
         this.fabricante = fabricante;
         this.modelo = modelo;
@@ -18,9 +17,9 @@ abstract public class Veiculo {
         this.ano = ano;
         this.placa = placa;
         this.categoria = categoria;
-    }    
+    }
 
-
+    // getters e setters
     public String getFabricante() {
         return this.fabricante;
     }
